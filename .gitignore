@@ -1,0 +1,8 @@
+# Matériel source du cours (PDF, notebooks) : non servi par le site, non publié
+/proba/
+# Config locale de l'éditeur / de Claude Code
+.claude/
+# Divers
+.DS_Store
+Thumbs.db
+*.log

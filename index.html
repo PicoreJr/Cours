@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Révisions</title>
+    <meta name="description" content="Site de révisions : résumés, fiches de partiel, QCM, exercices et formulaires par chapitre." />
+    <!-- KaTeX (local, hors-ligne) -->
+    <link rel="stylesheet" href="vendor/katex/katex.min.css" />
+    <!-- Styles du site -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <button class="brand" id="brandBtn" title="Accueil">
+          <span class="brand-name" id="siteName">Révisions</span>
+          <span class="brand-tag" id="siteTag">fiches de partiel</span>
+        </button>
+        <nav class="crumbs" id="crumbs"></nav>
+        <span class="spacer"></span>
+        <button class="iconbtn langbtn" id="langBtn" title="Changer de langue" aria-label="Changer de langue"><span id="langLabel">EN</span></button>
+        <button class="iconbtn themebtn" id="themeBtn" title="Changer de thème" aria-label="Changer de thème">
+          <svg class="ico-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="ico-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span class="themebtn-label" id="themeLabel">Clair</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <!-- KaTeX -->
+    <script defer src="vendor/katex/katex.min.js"></script>
+    <script defer src="vendor/katex/auto-render.min.js"></script>
+    <!-- i18n + données (le registre AVANT les chapitres) -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="data/subjects.js"></script>
+    <script src="data/proba/ch01-03.js"></script>
+    <script src="data/proba/ch04.js"></script>
+    <!-- traductions anglaises (même id de chapitre, lang:"en") -->
+    <script src="data/proba/en/ch01-03.js"></script>
+    <script src="data/proba/en/ch04.js"></script>
+    <!-- application (en dernier) -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
