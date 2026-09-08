@@ -67,11 +67,11 @@
   });
 
   defineSubject({
-    id: "matiere-2",
-    title: "Matière 2",
-    subtitle: "À définir",
+    id: "fin-eng",
+    title: "Financial Engineering",
+    subtitle: "Ingénierie financière — cours à venir",
     status: "coming",
-    i18n: { en: { title: "Subject 2", subtitle: "To be defined" } },
+    i18n: { en: { title: "Financial Engineering", subtitle: "Course coming soon" } },
   });
 
   defineSubject({
