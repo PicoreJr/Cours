@@ -32,6 +32,10 @@ notions essentielles et des sigles, avec recherche en direct). **Chaque nouveau 
 ## Déployer sur GitHub Pages
 `git init` → push → activer Pages sur la branche. Le fichier `.nojekyll` (présent) fait servir les
 dossiers tels quels. Rien d'autre à configurer (chemins relatifs + hash router).
+**À chaque déploiement, incrémenter le paramètre `?v=N`** des `<link>`/`<script>` locaux dans
+`index.html` (CSS, `app.js`, `i18n.js`, `data/**`) : GitHub Pages met les fichiers en cache 10 min et
+les navigateurs gardent l'ancienne version sinon. Dépôt : https://github.com/PicoreJr/Cours, site :
+https://picorejr.github.io/Cours/
 
 ## Arborescence
 ```
