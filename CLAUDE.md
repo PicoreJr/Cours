@@ -3,8 +3,10 @@
 Site de **révisions** (fiches de partiel) — statique, sans build, hors-ligne, déployable sur
 GitHub Pages. Deux matières prêtes (**Probabilités**, **Financial Engineering**) + 2 emplacements « à venir ».
 Chaque matière est
-découpée en **chapitres**, et chaque chapitre expose 5 sections : Résumé de cours, À savoir pour le
-partiel (fiche liée aux exos), QCM interactif, Exercices corrigés, Formulaire.
+découpée en **chapitres**, et chaque chapitre expose 6 sections : Résumé de cours, À savoir pour le
+partiel (fiche liée aux exos), QCM interactif, Exercices corrigés, Formulaire, Définitions (lexique des
+notions essentielles et des sigles, avec recherche en direct). **Chaque nouveau chapitre doit remplir les
+6 sections**, `definitions` comprise.
 
 ## Contraintes importantes
 - **Style de l'interface** : aucune émoticône ni icône décorative, pas de footer. Les matières sont
@@ -60,7 +62,7 @@ financial/            MATÉRIEL SOURCE de Financial Engineering (PDF chapitre + 
 - `#/` → accueil (cartes matières)
 - `#/{matiere}` → matière (section `summary`, tous chapitres)
 - `#/{matiere}/{section}/{chapitre|all}` → section précise
-  (`section` ∈ `summary | fiche | qcm | exos | formulas`)
+  (`section` ∈ `summary | fiche | qcm | exos | formulas | defs`)
 
 ## Modèle de données (un chapitre)
 ```js
@@ -72,6 +74,7 @@ addChapter("proba", {
   qcm:       [ { q, choices:[…], answer: <index>, explanation } ],
   exos:      [ { id, title, difficulty:"facile|moyen|difficile", tags:[],
                  statement, hints?:[…], solution } ],
+  definitions: [ { term, abbr?, def: String.raw`…` } ],          // lexique ; abbr = sigle (EMH, cdf…)
 });
 ```
 
@@ -93,6 +96,9 @@ contenant du LaTeX sont écrits avec `String.raw`** (préserve les backslashes).
 ## Ajouter du contenu
 - **Un chapitre** : créer `data/{matiere}/{chapitre}.js` (copier un fichier existant comme gabarit),
   `addChapter(...)`, puis ajouter le `<script>` dans `index.html` (après `subjects.js`).
+- **Définitions** : 20 à 50 entrées par chapitre, dans l'ordre du cours. `term` (HTML, maths permises),
+  `abbr` facultatif pour les sigles (affiché en pastille, texte brut), `def` en 1 à 3 phrases. Les
+  traductions gardent le même ordre d'entrées.
 - **Une matière** : `defineSubject({ id, title, subtitle, status:"ready"|"coming" })` dans
   `data/subjects.js`, puis ses chapitres.
 - La fiche partiel pointe vers un exo via `keyPoints[].exos = ["<id d'exo du même chapitre>"]` ;

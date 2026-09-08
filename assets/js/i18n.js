@@ -16,7 +16,7 @@
       site_tag: "fiches de partiel",
       home_title: "Mes matières",
       home_intro:
-        "Pour chaque matière et chaque chapitre : un résumé de cours, les points à connaître pour le partiel, un QCM, des exercices corrigés et un formulaire.",
+        "Pour chaque matière et chaque chapitre : un résumé de cours, les points à connaître pour le partiel, un QCM, des exercices corrigés, un formulaire et un lexique des définitions et sigles.",
       coming_soon: "à venir",
       ready: "prête",
       chapters_n: (n) => `${n} chapitre${n > 1 ? "s" : ""}`,
@@ -29,6 +29,9 @@
       tab_qcm: "QCM",
       tab_exos: "Exercices",
       tab_formulas: "Formulaire",
+      tab_defs: "Définitions",
+      defs_search: "Rechercher un terme ou un sigle",
+      defs_none: "Aucun terme ne correspond.",
       // Filtre de chapitre
       filter_all: "Tous les chapitres",
       filter_label: "Chapitre",
@@ -75,7 +78,7 @@
       site_tag: "exam study sheets",
       home_title: "My subjects",
       home_intro:
-        "For each subject and each chapter: a course summary, the key points for the exam, a quiz, worked exercises and a formula sheet.",
+        "For each subject and each chapter: a course summary, the key points for the exam, a quiz, worked exercises, a formula sheet and a glossary of definitions and acronyms.",
       coming_soon: "coming soon",
       ready: "ready",
       chapters_n: (n) => `${n} chapter${n > 1 ? "s" : ""}`,
@@ -88,6 +91,9 @@
       tab_qcm: "Quiz",
       tab_exos: "Exercises",
       tab_formulas: "Formula sheet",
+      tab_defs: "Definitions",
+      defs_search: "Search a term or an acronym",
+      defs_none: "No matching term.",
       // Chapter filter
       filter_all: "All chapters",
       filter_label: "Chapter",

@@ -339,7 +339,33 @@ table.tbl td:first-child { color: var(--text); font-weight: 600; white-space: no
 .katex-display { margin: .6em 0; overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
 ::selection { background: color-mix(in srgb, var(--accent) 35%, transparent); }
 
+/* ---------- Définitions (lexique + sigles) ---------- */
+[hidden] { display: none !important; }
+.defsearch-wrap { margin: 18px auto 0; }
+.defsearch {
+  width: 100%; max-width: var(--readw); display: block; font: inherit; font-size: 15px; color: var(--text);
+  background: var(--bg-card); border: 1px solid var(--border-2); border-radius: 999px; padding: 12px 18px; outline: none;
+  transition: border-color .12s, box-shadow .12s;
+}
+.defsearch::placeholder { color: var(--text-dim); }
+.defsearch:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.def-list { max-width: var(--readw); padding: 8px 40px; }
+.def { padding: 22px 0; border-bottom: 1px solid var(--border); }
+.def:last-child { border-bottom: 0; }
+.def-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.def-term { font-family: var(--font-head); font-weight: 600; font-size: 20px; color: var(--text); }
+.def-abbr {
+  font-size: 12px; font-weight: 600; letter-spacing: .05em; padding: 3px 10px; border-radius: 999px;
+  color: var(--accent); background: var(--accent-soft); white-space: nowrap;
+}
+.def-body { color: var(--text-soft); line-height: 1.6; }
+.def-body strong { color: var(--text); font-weight: 600; }
+.def-body em { color: var(--text); }
+
 @media (max-width: 720px){
+  .def-list { padding: 4px 20px; }
+  .def { padding: 18px 0; }
+  .def-term { font-size: 18px; }
   body { font-size: 16px; }
   .wrap, .topbar-inner { padding-left: 18px; padding-right: 18px; }
   .brand-tag, .crumbs { display: none; }

@@ -13,7 +13,7 @@
 
    ----- POUR AJOUTER UN CHAPITRE -----
    addChapter("<idMatiere>", { id, title, short, lang:"fr",
-       summary, keyPoints, formulas, qcm, exos });
+       summary, keyPoints, formulas, qcm, exos, definitions });
    Le français (lang:"fr") est la version de référence : elle fixe
    la liste et l'ordre des chapitres. Une traduction est un second
    appel addChapter avec le MÊME id et lang:"en" (fichier
@@ -46,6 +46,7 @@
     chapter.formulas = chapter.formulas || [];
     chapter.qcm = chapter.qcm || [];
     chapter.exos = chapter.exos || [];
+    chapter.definitions = chapter.definitions || [];
     const lang = chapter.lang || "fr";
     if (lang === "fr") {
       s.chapters.push(chapter);

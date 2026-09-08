@@ -16,6 +16,7 @@
     { id: "qcm", label: "tab_qcm" },
     { id: "exos", label: "tab_exos" },
     { id: "formulas", label: "tab_formulas" },
+    { id: "defs", label: "tab_defs" },
   ];
 
   const app = () => document.getElementById("app");
@@ -200,6 +201,17 @@
       root.appendChild(cf);
     }
 
+    // barre de recherche (section définitions)
+    let search = null;
+    if (section === "defs" && sectionCount(subject, "defs") > 0) {
+      search = el(
+        `<div class="defsearch-wrap wrap">
+           <input class="defsearch" type="search" placeholder="${esc(t("defs_search"))}" aria-label="${esc(t("defs_search"))}">
+         </div>`
+      );
+      root.appendChild(search);
+    }
+
     // corps
     const body = el(`<div class="section-body wrap"></div>`);
     root.appendChild(body);
@@ -211,6 +223,7 @@
       qcm: renderQcm,
       exos: renderExos,
       formulas: renderFormulas,
+      defs: renderDefs,
     }[section];
 
     visible.forEach((ch) => {
@@ -221,6 +234,7 @@
     });
 
     typesetMath(body);
+    if (search) initDefSearch(search.querySelector("input"), body);
 
     // ouverture d'un exo ciblé depuis la fiche
     if (section === "exos" && pendingExo) {
@@ -245,6 +259,7 @@
       else if (sid === "exos") n += (c.exos || []).length;
       else if (sid === "formulas") n += (c.formulas || []).length;
       else if (sid === "fiche") n += (c.keyPoints || []).length;
+      else if (sid === "defs") n += (c.definitions || []).length;
     });
     return n;
   }
@@ -305,6 +320,51 @@
       card.appendChild(row);
     });
     block.appendChild(card);
+  }
+
+  /* ---------- section : définitions (lexique + sigles) ---------- */
+  function renderDefs(block, subject, ch) {
+    const defs = ch.definitions || [];
+    if (!defs.length) return block.appendChild(el(`<div class="empty">${esc(t("empty_section"))}</div>`));
+    const card = el(`<div class="card def-list"></div>`);
+    defs.forEach((d) => {
+      card.appendChild(
+        el(
+          `<div class="def">
+             <div class="def-head">
+               <span class="def-term">${d.term}</span>
+               ${d.abbr ? `<span class="def-abbr">${esc(d.abbr)}</span>` : ""}
+             </div>
+             <div class="def-body">${d.def}</div>
+           </div>`
+        )
+      );
+    });
+    block.appendChild(card);
+  }
+  // Filtre en direct : on compare le texte normalisé (minuscules, sans
+  // accents) de chaque définition à la requête ; les chapitres sans
+  // résultat sont masqués.
+  function normalize(s) {
+    return String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+  function initDefSearch(input, body) {
+    const empty = el(`<div class="empty" hidden>${esc(t("defs_none"))}</div>`);
+    body.appendChild(empty);
+    const rows = [...body.querySelectorAll(".def")].map((node) => ({ node, text: normalize(node.textContent) }));
+    input.addEventListener("input", () => {
+      const q = normalize(input.value.trim());
+      let shown = 0;
+      rows.forEach((r) => {
+        const ok = !q || r.text.includes(q);
+        r.node.hidden = !ok;
+        if (ok) shown++;
+      });
+      body.querySelectorAll(".chapter-block").forEach((blk) => {
+        blk.hidden = !blk.querySelector(".def:not([hidden])");
+      });
+      empty.hidden = shown > 0;
+    });
   }
 
   /* ---------- section : exercices ---------- */
