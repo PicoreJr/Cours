@@ -1,7 +1,8 @@
 # CLAUDE.md
 
 Site de **révisions** (fiches de partiel) — statique, sans build, hors-ligne, déployable sur
-GitHub Pages. Une matière prête (**Probabilités**) + 3 emplacements « à venir ». Chaque matière est
+GitHub Pages. Deux matières prêtes (**Probabilités**, **Financial Engineering**) + 2 emplacements « à venir ».
+Chaque matière est
 découpée en **chapitres**, et chaque chapitre expose 5 sections : Résumé de cours, À savoir pour le
 partiel (fiche liée aux exos), QCM interactif, Exercices corrigés, Formulaire.
 
@@ -44,11 +45,14 @@ data/
   proba/ch01-03.js    contenu du chapitre (fr, version de référence)
   proba/ch04.js       contenu du chapitre (fr, version de référence)
   proba/en/*.js       traductions anglaises (même id, lang:"en") ; repli sur le fr si absente
-proba/                MATÉRIEL SOURCE du cours (PDF slides + companions, notebooks) — non servi
+  financial/ch01.js   Financial Engineering, chapitre 1 (fr, version de référence)
+  financial/en/ch01.js  traduction anglaise
+proba/                MATÉRIEL SOURCE du cours de proba (PDF slides + companions, notebooks) — non servi
+financial/            MATÉRIEL SOURCE de Financial Engineering (PDF chapitre + références Bodie-Kane-Marcus) — non servi
 ```
 
 ## Ordre de chargement (index.html)
-`i18n.js` → `data/subjects.js` (définit le registre) → `data/proba/*.js` (ajoutent les chapitres)
+`i18n.js` → `data/subjects.js` (définit le registre) → `data/proba/*.js`, `data/financial/*.js` (ajoutent les chapitres)
 → `assets/js/app.js` (lit `window.RevData` au boot). KaTeX est chargé en `defer` : disponible au
 `DOMContentLoaded`, donc avant le premier rendu. **Respecter cet ordre** en ajoutant des `<script>`.
 
@@ -114,3 +118,6 @@ Le cours d'origine est dans `proba/imen266-2026-main/` (IMEN266, Ross — *Intro
 Probability Models*) : slides + companions (PDF), notebooks. Le contenu du site en est tiré à la
 main (⚠️ **à relire/valider** par l'utilisateur). Extraction PDF possible avec `pymupdf` (déjà
 installé) si besoin de re-vérifier une définition ou un énoncé.
+Le cours de Financial Engineering est dans `financial/` : `Chapter01_Financial Markets.pdf` (notes de
+cours) + `Reference A` (Asset Classes, Bodie-Kane-Marcus ch. 2) + `Reference B` (EMH, BKM ch. 11). Un
+chapitre du site = le chapitre PDF **et** ses références. Pas de `$` littéral pour l'argent : écrire « € ».

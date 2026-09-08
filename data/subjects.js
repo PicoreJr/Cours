@@ -1,7 +1,7 @@
 /* ============================================================
    Registre des matières.
    Ce fichier définit la structure de données et les 4 matières
-   (1 prête + 3 « à venir »). Les CHAPITRES sont ajoutés par les
+   (2 prêtes + 2 « à venir »). Les CHAPITRES sont ajoutés par les
    fichiers data/<matiere>/<chapitre>.js via addChapter(...).
 
    ----- POUR AJOUTER UNE MATIÈRE -----
@@ -69,9 +69,9 @@
   defineSubject({
     id: "fin-eng",
     title: "Financial Engineering",
-    subtitle: "Ingénierie financière — cours à venir",
-    status: "coming",
-    i18n: { en: { title: "Financial Engineering", subtitle: "Course coming soon" } },
+    subtitle: "Ingénierie financière — marchés, produits dérivés, actualisation",
+    status: "ready",
+    i18n: { en: { title: "Financial Engineering", subtitle: "Markets, derivatives, discounting" } },
   });
 
   defineSubject({
