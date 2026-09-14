@@ -140,4 +140,4 @@ ch. 1 cours 1-2, ch. 2 cours 3-4, ch. 3 cours 5-6 (faits, fr) ; ch. 4 cours 7-8 
 9/9SA/9SB/10 (équations de la convection), ch. 6 cours 11/11S/12/12SA/13 (couche limite), ch. 7 cours 14/14S (corrélations
 externes), ch. 8 cours 15-19 + sup1/sup2 manuscrits (écoulement interne), ch. 9 cours 22-24 (rayonnement) — à faire, ainsi
 que les traductions `data/heat/en/`. Erratum à signaler au ch. 9 : cours 24, ex. 2 (disque/hémisphère), $R_{12}=1/\pi$ et
-non $2/\pi$, donc $qpprox 83{,}1$ kW au lieu de 56,5 kW.
+non $2/\pi$, donc $q\approx 83{,}1$ kW au lieu de 56,5 kW.
