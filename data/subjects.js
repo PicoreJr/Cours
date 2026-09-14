@@ -70,9 +70,9 @@
   defineSubject({
     id: "fin-eng",
     title: "Financial Engineering",
-    subtitle: "Ingénierie financière — marchés, produits dérivés, actualisation",
+    subtitle: "Ingénierie financière — marchés, dérivés, taux d'intérêt",
     status: "ready",
-    i18n: { en: { title: "Financial Engineering", subtitle: "Markets, derivatives, discounting" } },
+    i18n: { en: { title: "Financial Engineering", subtitle: "Markets, derivatives, interest rates" } },
   });
 
   defineSubject({

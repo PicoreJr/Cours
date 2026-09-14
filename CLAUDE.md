@@ -51,8 +51,9 @@ data/
   proba/ch01-03.js    contenu du chapitre (fr, version de référence)
   proba/ch04.js       contenu du chapitre (fr, version de référence)
   proba/en/*.js       traductions anglaises (même id, lang:"en") ; repli sur le fr si absente
-  financial/ch01.js   Financial Engineering, chapitre 1 (fr, version de référence)
-  financial/en/ch01.js  traduction anglaise
+  financial/ch01.js   Financial Engineering, chapitre 1 — Marchés financiers (fr, référence)
+  financial/ch02.js   Financial Engineering, chapitre 2 — Taux d'intérêt (fr, référence)
+  financial/en/*.js   traductions anglaises
 proba/                MATÉRIEL SOURCE du cours de proba (PDF slides + companions, notebooks) — non servi
 financial/            MATÉRIEL SOURCE de Financial Engineering (PDF chapitre + références Bodie-Kane-Marcus) — non servi
 ```
@@ -129,5 +130,6 @@ Probability Models*) : slides + companions (PDF), notebooks. Le contenu du site 
 main (⚠️ **à relire/valider** par l'utilisateur). Extraction PDF possible avec `pymupdf` (déjà
 installé) si besoin de re-vérifier une définition ou un énoncé.
 Le cours de Financial Engineering est dans `financial/` : `Chapter01_Financial Markets.pdf` (notes de
-cours) + `Reference A` (Asset Classes, Bodie-Kane-Marcus ch. 2) + `Reference B` (EMH, BKM ch. 11). Un
-chapitre du site = le chapitre PDF **et** ses références. Pas de `$` littéral pour l'argent : écrire « € ».
+cours) + `Reference A` (Asset Classes, Bodie-Kane-Marcus ch. 2) + `Reference B` (EMH, BKM ch. 11) ;
+`Chapter02_Interest Rates.pdf` (d'après Hull, sans référence ; coquilles relevées et signalées sur le site :
+fig. 2.5, relation de la duration modifiée). Un chapitre du site = le chapitre PDF **et** ses références. Pas de `$` littéral pour l'argent : écrire « € ».
