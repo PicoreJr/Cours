@@ -67,15 +67,30 @@ addChapter("fin-eng", {
           and stocks (risk-tolerant investors). Each picks the risk they like and the firm raises capital.</li>
       <li><strong>Separation of ownership and management</strong>: shareholders can sell their shares without
           affecting management. The flip side is the <strong>agency problem</strong> (do managers really maximize
-          firm value? moral hazard). Safeguards: incentive compensation (stock options), boards of directors,
-          analysts and institutional investors, the threat of takeover.</li>
-      <li><strong>Corporate governance and ethics</strong>: transparency is needed for well-informed decisions;
-          accounting scandals (Enron, WorldCom), the Sarbanes-Oxley Act in the U.S.</li>
+          firm value? moral hazard). Safeguards: incentive compensation (executive stock options); the board of
+          directors can force out managers (Disney, Boeing, Fannie Mae); security analysts and large institutional
+          investors (pension funds) make poor performers uncomfortable; bad performers face the threat of a takeover or
+          a <em>proxy fight</em> (e.g. at HP).</li>
+      <li><strong>Corporate governance and ethics</strong>: an acceptable level of transparency is needed for investors
+          to make well-informed decisions. Examples of failures: <em>accounting</em> scandals (the bankruptcies of Enron
+          and WorldCom), <em>analyst</em> scandals (Citigroup's Salomon Smith Barney), abuses in <em>initial public
+          offerings</em> (Credit Suisse First Boston). Response: the <strong>Sarbanes-Oxley Act</strong> in the U.S.,
+          which tightened the rules of corporate governance (e.g. more independent directors).</li>
     </ul>
     <p><strong>The players</strong>: business firms are net borrowers, households net savers, governments can be
-    either. <strong>Financial intermediaries</strong> (commercial banks, investment companies, insurers, pension
-    funds, mutual funds) issue their own securities to buy those of other corporations; investment bankers advise
-    the issuer and market the securities in the primary market.</p>
+    either (depending on tax revenues versus government expenditures).</p>
+    <ul>
+      <li><strong>Financial intermediaries</strong> (commercial banks, investment companies, insurance companies,
+          credit unions, mutual funds, pension funds) issue their own securities to raise funds and purchase the
+          securities of other corporations.</li>
+      <li><strong>Commercial banks</strong> raise funds by borrowing (taking deposits) and lend that money to other
+          borrowers.</li>
+      <li><strong>Investment companies</strong> pool and manage the money of many investors, using economies of scale
+          and scope.</li>
+      <li><strong>Investment bankers</strong> (Goldman Sachs, Merrill Lynch, Citigroup…) advise the issuing corporation on
+          the prices it can charge for its securities and on appropriate interest rates, and handle the marketing of the
+          securities in the <strong>primary market</strong>.</li>
+    </ul>
     <div class="callout"><strong>Markets are competitive: "there is no free lunch".</strong>
       <p><em>Risk-return trade-off</em>: higher expected returns are paid for with higher risk. Two central
       questions: how should one measure the risk of an asset? what should be the quantitative trade-off between
@@ -83,27 +98,52 @@ addChapter("fin-eng", {
       <em>diversification</em>.</p>
       <p><em>Active management</em> (finding undervalued securities, timing the market) versus <em>passive
       management</em> (holding an efficient portfolio without trying to beat the market).</p></div>
-    <p><strong>The 2008 crisis</strong>: the <em>securitization</em> of mortgage loans (Fannie Mae, Freddie Mac,
-    then private firms) extended the model to <em>subprime</em> loans with high default risk. <em>Systemic
-    risk</em> is a potential breakdown of the financial system when problems in one market spill over into
-    others (AIG's insolvency threatened the banks that relied on its protection). Responses: pouring capital into
-    banks (quantitative easing), central clearing of standardized OTC products such as CDS (central counterparty,
-    CCP), risk-based incentives. The <em>TED spread</em> (gap between the LIBOR interbank rate and the T-bill
-    rate) measures stress in the banking system.</p>
+    <p><strong>The 2008 crisis.</strong></p>
+    <ul>
+      <li><em>House prices</em> (Case-Shiller index): a steep rise from the late 1990s to a peak around 2006, then a fall
+          until about 2012. This was the starting point of the crisis.</li>
+      <li><em>Changes in housing finance.</em> Before 1970, most mortgage loans came from local lenders (savings banks,
+          credit unions). Then <strong>Fannie Mae</strong> (FNMA, Federal National Mortgage Association) and
+          <strong>Freddie Mac</strong> (FHLMC, Federal Home Loan Mortgage Corporation) began buying loans from originators
+          and bundling them into large pools that could be traded like any other financial asset: this is
+          <strong>securitization</strong>, initially limited to low-risk <em>conforming</em> mortgages. Private firms then
+          securitized <em>non-conforming</em> <strong>subprime</strong> loans with high default risk: hence the subprime
+          crisis.</li>
+      <li><em>Mortgage derivatives: CDOs</em> (collateralized debt obligations). The bank sells its loans to a
+          <strong>special purpose vehicle</strong> (SPV), which issues securities split into <strong>tranches</strong>:
+          <em>senior</em> (paid first, least risky), <em>mezzanine</em>, then <em>equity</em> (which absorbs the first
+          losses). Investors buy the tranches, and their cash flows back to the bank as payment for the loans sold.</li>
+      <li><em>TED spread</em>: the gap between LIBOR (interbank rate) and the T-bill rate. Low from 1988 to 2007, it jumped
+          in 2007-2008 when banks became afraid of lending to each other: an indicator of credit risk in the banking
+          system.</li>
+      <li><em>Systemic risk</em>: a potential breakdown of the financial system when problems in one market spill over and
+          disrupt others. Example: AIG's insolvency triggered the insolvency of other firms, particularly banks that had
+          relied on its promise of protection against defaults on hundreds of billions of dollars of mortgage loans.</li>
+      <li><em>Recovery</em>: pouring capital into precarious banks (quantitative easing, QE); centralized exchanges for
+          some standardized OTC products such as CDS contracts (central counterparty, CCP); risk-based incentive systems.</li>
+    </ul>
 
     <h3>4. Asset classes and products (Ref. A)</h3>
     <p><strong>Money market</strong>: short-term, marketable, liquid, low-risk debt securities ("cash
-    equivalents").</p>
+    equivalents"). By contrast, the <strong>capital market</strong> covers long-term, riskier securities: longer-term
+    bonds, equities, derivatives (options, futures).</p>
     <ul>
-      <li><em>Treasury bills</em> (T-bills): issued by the government with maturities of 4, 13, 26 or 52 weeks,
-          available on the secondary market, exempt from state and local taxes in the U.S.</li>
-      <li><em>Certificate of deposit</em> (CD): a time deposit with a bank; interest and principal are paid only
-          at the end of the term.</li>
-      <li><em>Commercial paper</em> (CP): short-term unsecured debt issued by large, well-known companies;
-          asset-backed variant (ABCP).</li>
-      <li><em>Repurchase agreement</em> (repo): a dealer sells government securities with an agreement to buy them
-          back the next day at a slightly higher price; reference rates SOFR, KOFR.</li>
+      <li><em>Treasury bills</em> (T-bills): issued by the U.S. government with initial maturities of 4, 13, 26 or 52
+          weeks. Individuals can buy them on the secondary market from a government securities dealer. Minimum
+          denomination of only 100 dollars (10,000 dollars is common). Exempt from all state and local taxes.</li>
+      <li><em>Certificate of deposit</em> (CD): a time deposit with a bank that may not be withdrawn on demand; the bank
+          pays interest and principal only at the end of the fixed term.</li>
+      <li><em>Commercial paper</em> (CP): short-term unsecured debt notes issued by large, well-known companies. A sharp
+          recent increase in <em>asset-backed commercial paper</em> (ABCP), issued by financial firms such as banks to
+          raise short-term funds to invest in other assets, which serve as collateral.</li>
+      <li><em>Repurchase agreement</em> (repo, RP): a dealer sells government securities to an investor on an overnight
+          basis, with an agreement to buy them back at a future date (usually the next day) at a slightly higher price;
+          reference rates SOFR (U.S.), KOFR (Korea).</li>
     </ul>
+    <p>The <strong>spread between 3-month CD and T-bill rates</strong> measures the perceived risk of banks relative to
+    the government. Small in normal times (under one point), it spikes in every crisis: OPEC I (over 4 points around
+    1974), OPEC II (around 1980), the Penn Square failure (1982), the 1987 market crash, LTCM (1998), and the 2008
+    credit crisis (about 3.5 points).</p>
     <p><strong>Bond market</strong>: long-term securities.</p>
     <ul>
       <li><em>T-notes</em> (up to 10 years) and <em>T-bonds</em> (10 to 30 years), semiannual coupons;
@@ -115,7 +155,9 @@ addChapter("fin-eng", {
     </ul>
     <p><strong>Equity</strong>: each common share entitles its owner to one vote and to a share of the financial
     benefits. Shareholders have a <em>residual claim</em> (last in line on assets and income) and <em>limited
-    liability</em> (they can lose no more than their original investment). <em>Preferred stock</em> is a hybrid:
+    liability</em> (they can lose no more than their original investment). Voting rights make <em>proxy fights</em>
+    (proxy contests) possible, in which shareholders try to replace management: one remedy for the agency problem.
+    <em>Preferred stock</em> is a hybrid:
     higher priority on dividends and assets, like a bond, but usually no voting rights.</p>
     <p><strong>Stock market indexes</strong>: three construction questions (representative? broad or narrow? how
     weighted?). The <em>Dow Jones</em> (30 blue chips, since 1896) is <em>price-weighted</em>: it overweights
@@ -126,6 +168,11 @@ addChapter("fin-eng", {
     Options (call, put; expiration; exercise price; the premium increases with time to expiry), futures (long
     position $=$ buy, short $=$ sell), swaps, swaptions. An option costs a premium; a futures contract costs
     nothing to enter.</p>
+    <div class="callout"><strong>Composing a futures from options.</strong>
+      <p>Buying a call and selling a put with the same strike $K$ and expiry $T$ pays at expiry
+      $\max(S_T-K,0)-\max(K-S_T,0)=S_T-K$, whatever $S_T$: exactly the gain of a long futures position at price $K$.
+      Options are "building blocks" from which a futures can be rebuilt; the premium paid for the call is partly offset
+      by the premium received for the put.</p></div>
 
     <h3>5. The Efficient Market Hypothesis (Ref. B)</h3>
     <p>Kendall (1953) could identify no predictable patterns in stock prices: prices evolve randomly, as a
@@ -133,12 +180,15 @@ addChapter("fin-eng", {
     becomes available, participants analyze it and <em>competition</em> assures that prices reflect it
     immediately. A price therefore moves only on the arrival of new information, which is by definition
     unpredictable.</p>
+    <p>Illustration: <strong>cumulative abnormal returns of takeover targets</strong>. The price drifts up in the days
+    before the announcement (information leakage), jumps on the day itself (about $+26\%$ cumulative), then shows
+    <em>no further drift</em> after the announcement: the information is incorporated immediately, as the EMH predicts.</p>
     <div class="tbl-wrap"><table class="tbl">
       <thead><tr><th>Form of the EMH</th><th>Information already reflected in prices</th><th>What cannot beat the market</th></tr></thead>
       <tbody>
         <tr><td><strong>Weak</strong></td><td>Market trading data: past prices, volumes, short interest, interest rates.</td><td>Technical analysis (chartists, support and resistance levels).</td></tr>
         <tr><td><strong>Semistrong</strong></td><td>All publicly available information: accounting data, product line, quality of management, patents, earnings forecasts.</td><td>Fundamental analysis (balance sheets, past earnings).</td></tr>
-        <tr><td><strong>Strong</strong></td><td>All information relevant to the firm, including insiders' information.</td><td>Even insiders (insider trading is regulated: Rule 10b-5, SEC).</td></tr>
+        <tr><td><strong>Strong</strong></td><td>All information relevant to the firm, including insiders' information.</td><td>Even insiders. Rule 10b-5 of the Securities Exchange Act (1934) limits trading by corporate officers, directors and substantial owners, and requires them to report their trades to the SEC.</td></tr>
       </tbody></table></div>
     <p>The information sets are nested: strong $\supset$ semistrong $\supset$ weak. A strong-form efficient
     market is also semistrong- and weak-form efficient.</p>
@@ -146,25 +196,55 @@ addChapter("fin-eng", {
     and recommend passive management (index funds, ETFs, buy and hold). Hybrid strategy: a passive indexed core
     plus an actively managed portfolio.</p>
     <div class="callout"><strong>Testing efficiency: three issues.</strong>
-      <p><em>Magnitude</em>: a manager who improves the performance of a multi-billion fund by 0.1% per year creates
-      a lot of value, but the effect is swamped by the yearly volatility of the market and statistically
-      undetectable. <em>Selection bias</em>: winning schemes are not published; we only observe the failed ones.
+      <p>The EMH has never been widely accepted on Wall Street: can security analysis improve investment performance?
+      Three issues prevent a clear answer.</p>
+      <p><em>Magnitude</em>: a manager overseeing 5 billion dollars who improves performance by 0.1% per year creates
+      a lot of value (5 million a year), but the effect is swamped by the yearly volatility of the market and
+      statistically undetectable. <em>Selection bias</em>: winning schemes are not published; we only observe the failed ones.
       <em>Lucky event</em>: among thousands of investors, some succeed by chance; one must check whether the
       performance repeats.</p></div>
-    <p><strong>Tests and anomalies.</strong> Weak form: over short horizons, weak positive serial correlation and
-    the <em>momentum effect</em> (Jegadeesh and Titman 1993: good or bad recent performance continues); over long
-    horizons, negative serial correlation and the <em>reversal effect</em> (DeBondt and Thaler 1985), read as
-    short-term overreaction followed by correction. Semistrong form: the <em>P/E effect</em> (Basu 1977, low-P/E
-    portfolios earn more even after adjusting for beta), the <em>size effect</em> (Banz 1981), the
-    <em>neglected-firm effect</em> (Arbel and Strebel 1983), the <em>liquidity effect</em> (Amihud and Mendelson
-    1986, a premium demanded for illiquid stocks), the <em>book-to-market effect</em> (Fama and French 1992: a
-    higher ratio $\Rightarrow$ higher average return, and beta loses all explanatory power once size and
-    book-to-market are controlled), <em>post-earnings-announcement drift</em> (Ball and Brown 1968, sluggish
-    price response). Strong form: we do not expect it to hold, but following insiders' trades is to no avail
-    (Seyhun 1986).</p>
+    <p><strong>Weak-form tests</strong> (patterns in stock returns).</p>
+    <ul>
+      <li><em>Short horizons</em>: <strong>serial correlation</strong> (the tendency of returns to be related to past
+          returns), studied by Conrad and Kaul (1988) and Lo and MacKinlay (1988), cannot clearly reject the EMH, even
+          though weekly returns of NYSE stocks show positive serial correlation. <strong>Momentum effect</strong>
+          (Jegadeesh and Titman 1993): good or bad recent performance of particular stocks continues over time.</li>
+      <li><em>Long horizons</em>: <em>negative</em> serial correlation, hence the <strong>fads hypothesis</strong>: the
+          market might overreact to relevant news. <strong>Reversal effect</strong> (DeBondt and Thaler 1985, Chopra et
+          al. 1992): the best (worst) performing stocks tend to underperform (outperform) over the following years.
+          Short-term overreaction, which causes momentum, may lead to long-term reversals when the market recognizes its
+          past error.</li>
+    </ul>
+    <p><strong>Semistrong-form tests</strong> (market anomalies).</p>
+    <ul>
+      <li><strong>P/E effect</strong> (Basu 1977): portfolios of low-P/E stocks earn higher returns than high-P/E
+          portfolios, even after adjusting for beta.</li>
+      <li><strong>Small-firm (size) effect</strong> (Banz 1981): small firms outperform. Over 1926-2008, the average annual
+          return falls from 19.34% for the smallest-cap decile to 10.77% for the largest, and the gap persists beyond
+          what the security market line (SML) predicts.</li>
+      <li><strong>Neglected-firm effect</strong> (Arbel and Strebel 1983): small firms are neglected by large
+          institutional traders, and information about them is less available.</li>
+      <li><strong>Liquidity effect</strong> (Amihud and Mendelson 1986): investors demand a rate-of-return premium to
+          invest in less liquid stocks.</li>
+      <li><strong>Book-to-market effect</strong> (Fama and French 1992): a higher book-to-market ratio implies a higher
+          average return (from 10.51% for the lowest decile to 16.78% for the highest, 1926-2008). After controlling for
+          size and book-to-market, beta no longer explains average returns.</li>
+      <li><strong>Post-earnings-announcement drift</strong> (Ball and Brown 1968): prices respond sluggishly to earnings
+          announcements. Stocks with the largest positive surprise (decile 10) keep rising for 90 days after the
+          announcement (up to about $+8\%$ cumulative), those with the largest negative surprise keep falling: contrary to
+          efficiency, where the adjustment should be immediate.</li>
+    </ul>
+    <p><strong>Strong-form tests</strong> (inside information): we do not expect markets to be strong-form efficient,
+    and insider trading is regulated (SEC). Can other investors benefit by following insiders' reported trades? Seyhun
+    (1986) found that it is to no avail: the abnormal returns are not sufficient.</p>
+    <p><strong>Persistence of mutual fund performance.</strong> If funds are ranked into deciles by risk-adjusted
+    performance over one quarter, the gap between the best (about $+4.6\%$) and the worst (about $-4.8\%$) is large
+    during that quarter but almost entirely vanishes in the following quarter: even if some managers are skilled, their
+    <strong>alphas</strong> (abnormal returns) are short-lived. Over several years, Carhart (1997) shows that the deciles'
+    returns converge within the first year: future performance is almost independent of past performance.</p>
     <p><strong>Verdict</strong>: the performance of professional managers is broadly consistent with market
-    efficiency. Most do not beat the passive strategy and past performance barely predicts future performance
-    (Carhart 1997); the "superstars" (Lynch, Buffett, Templeton, Soros) are the exception.</p>
+    efficiency. Most managers do not beat the passive strategy; there are, however, some notable "superstars" (Peter
+    Lynch, Warren Buffett, John Templeton, George Soros).</p>
 
     <h3>6. Options</h3>
     <p>The simplest option, the <strong>European call</strong>, is a contract under which, at a prescribed future
@@ -253,7 +333,9 @@ addChapter("fin-eng", {
       text: String.raw`<strong>Three functions of financial markets</strong>: raising capital (capital markets), transferring
         risk (derivative markets), international trade (currency markets). Subtypes: stocks, bonds, money market (short
         term), derivatives, foreign exchange. Economic roles: information, consumption timing, allocation of risk,
-        separation of ownership and management (agency problem).`,
+        separation of ownership and management (agency problem; safeguards: stock options, board, analysts, takeover
+        threat, proxy fights). Governance: Enron, WorldCom, Sarbanes-Oxley. 2008 crisis: securitization (Fannie Mae,
+        Freddie Mac, then subprime), tranched CDOs, TED spread, systemic risk (AIG).`,
     },
     {
       text: String.raw`<strong>Asset classes.</strong> Money market $=$ short-term, liquid, low-risk (T-bills, CDs, CP,
@@ -271,7 +353,8 @@ addChapter("fin-eng", {
     {
       text: String.raw`<strong>Testing the EMH.</strong> Three issues: magnitude, selection bias, lucky event. Anomalies to
         know: momentum (short run) and reversal (long run), P/E effect, size, neglected firm, liquidity, book-to-market
-        (Fama-French), post-earnings-announcement drift. Verdict: most managers do not beat passive management.`,
+        (Fama-French), post-earnings-announcement drift. Verdict: most managers do not beat passive management, and alphas do not persist (Carhart 1997). Long horizons:
+        fads hypothesis.`,
       exos: ["ex-emh"],
     },
     {
@@ -284,8 +367,9 @@ addChapter("fin-eng", {
     {
       text: String.raw`<strong>Forward versus futures.</strong> Same commitment (deliver the asset at the agreed price,
         nothing paid up-front, unlike an option premium), but the futures is standardized, exchange-traded, with margin
-        and <em>daily settlement</em> of gains and losses; the forward settles everything at expiry.`,
-      exos: ["ex-forward-futures"],
+        and <em>daily settlement</em> of gains and losses; the forward settles everything at expiry. Long call $+$ short put (same $K$, same $T$) $=$ futures at price
+        $K$: payoff $S_T-K$.`,
+      exos: ["ex-forward-futures", "ex-payoffs"],
     },
     {
       text: String.raw`<strong>Three types of traders.</strong> Hedger: reduces an existing risk. Speculator: bets on a
@@ -486,6 +570,64 @@ addChapter("fin-eng", {
         attempts, which prevents a fair evaluation of managers' true ability. The last two answers describe the lucky
         event issue and the magnitude issue.`,
     },
+    {
+      q: String.raw`Buying a call and selling a put with the same strike $K$ and the same expiry $T$ is equivalent to…`,
+      choices: [
+        String.raw`a short futures position at price $K$.`,
+        String.raw`a risk-free investment paying $K$.`,
+        String.raw`a long futures position at price $K$.`,
+        String.raw`a call with strike $2K$.`,
+      ],
+      answer: 2,
+      explanation: String.raw`At expiry, $\max(S_T-K,0)-\max(K-S_T,0)=S_T-K$ whatever $S_T$: the gain of a long futures position at
+        price $K$. Options can therefore be used to "compose" a futures.`,
+    },
+    {
+      q: String.raw`In a CDO, which tranche absorbs the <strong>first losses</strong> when loans default?`,
+      choices: [String.raw`The senior tranche.`, String.raw`The mezzanine tranche.`, String.raw`The SPV.`, String.raw`The equity tranche.`],
+      answer: 3,
+      explanation: String.raw`The bank sells its loans to an SPV that issues tranches. The <em>equity</em> tranche takes the first losses
+        (hence a high promised return), then <em>mezzanine</em>, and <em>senior</em> last. The SPV is the issuing vehicle, not a
+        tranche.`,
+    },
+    {
+      q: String.raw`The spread between 3-month CD and T-bill rates rises sharply…`,
+      choices: [
+        String.raw`during crises (oil shocks, the 1987 crash, LTCM, 2008), when the perceived risk of banks rises.`,
+        String.raw`whenever interest rates fall, whatever the context.`,
+        String.raw`only when the government borrows more.`,
+        String.raw`never: both rates are risk-free.`,
+      ],
+      answer: 0,
+      explanation: String.raw`A CD is a claim on a bank, a T-bill a claim on the government. In times of stress, investors demand a
+        premium for bank risk: the spread jumps (over 4 points during OPEC I, about 3.5 points in 2008). The TED spread (LIBOR
+        versus T-bills) reads the same way.`,
+    },
+    {
+      q: String.raw`According to Arbel and Strebel (1983), why do small firms offer higher returns?`,
+      choices: [
+        String.raw`Because they pay more dividends.`,
+        String.raw`Because they are neglected by large institutional traders and information about them is less available.`,
+        String.raw`Because their beta is always above 2.`,
+        String.raw`Because they are tax-exempt.`,
+      ],
+      answer: 1,
+      explanation: String.raw`This is the <em>neglected-firm effect</em>, related to Banz's (1981) size effect: from 19.34% a year for the
+        smallest-cap decile to 10.77% for the largest (1926-2008). The liquidity effect (Amihud and Mendelson) is a closely
+        related explanation.`,
+    },
+    {
+      q: String.raw`Funds in the top decile in a given quarter show close-to-average performance the following quarter. This means that…`,
+      choices: [
+        String.raw`the best managers systematically become the worst.`,
+        String.raw`the market is weak-form inefficient.`,
+        String.raw`alphas are short-lived: past performance is a poor predictor of future performance.`,
+        String.raw`one should buy the worst-decile funds.`,
+      ],
+      answer: 2,
+      explanation: String.raw`Even if some managers are skilled, their abnormal returns do not persist (Carhart 1997). This is
+        consistent with efficiency and supports passive management.`,
+    },
   ],
 
   /* -------------------- EXERCISES -------------------- */
@@ -524,7 +666,9 @@ addChapter("fin-eng", {
         expiry $T$. The call costs 8 €, the put 5 €.</p>
         <p>(a) Give the payoff and the profit of the call <em>buyer</em>, then of the put buyer, if at expiry $S_T=80$,
         $100$ or $120$ €. (b) For which $S_T$ does the call buyer break even (zero profit)? Same question for the put.
-        (c) What are the maximum profit and maximum loss of the put buyer? Of the put <em>writer</em>?</p>`,
+        (c) What are the maximum profit and maximum loss of the put buyer? Of the put <em>writer</em>?</p>
+        <p>(d) An investor buys the call and sells the put. Give the payoff of this portfolio for $S_T=80$, $100$ and
+        $120$ €, then in general. Which contract does it correspond to? What is its net cost at inception?</p>`,
       hints: [String.raw`Call payoff $=\max(S_T-K,0)$, put payoff $=\max(K-S_T,0)$; profit $=$ payoff $-$ premium, the premium being paid up-front whatever happens.`],
       solution: String.raw`
         <p><strong>(a)</strong> The payoff is what exercise brings; the profit subtracts the premium paid at the start.</p>
@@ -541,7 +685,12 @@ addChapter("fin-eng", {
         <p><strong>(c)</strong> Put buyer: maximum loss $=$ the premium, 5 € (if $S_T\ge 100$); maximum profit if the stock
         falls to 0: $100-5=95$ €. The put writer has exactly the opposite position: maximum gain 5 € (keeping the
         premium), maximum loss 95 €. This is why the writer, who has an <em>obligation</em> rather than a right, must
-        think about hedging.</p>`,
+        think about hedging.</p>
+        <p><strong>(d)</strong> Payoff $=\max(S_T-100,0)-\max(100-S_T,0)$: $-20$ for $S_T=80$, $0$ for $100$, $+20$ for
+        $120$. In general, $S_T-100$ whatever $S_T$: this is the payoff of a <strong>long futures</strong> (or forward)
+        position at price 100. Net cost at inception: $8-5=3$ € paid, whereas a futures costs nothing. These 3 € reflect
+        the fact that, with these premiums, the forward price of the stock is not exactly 100 €; the portfolio's profit is
+        $S_T-103$.</p>`,
     },
     {
       id: "ex-pv",
@@ -646,7 +795,9 @@ addChapter("fin-eng", {
         weeks. (c) An analyst earns abnormal returns by buying stocks with a low published price-earnings ratio. (d) A
         CFO buys shares of their own company one week before the release of exceptional earnings and makes a large gain.
         (e) Out of 5,000 managers, about ten beat the index ten years in a row. (f) A passive index fund beats 80% of
-        active funds over ten years.</p>`,
+        active funds over ten years. (g) After an earnings announcement far above expectations, the stock jumps on the day
+        and then keeps rising steadily for three months. (h) An investor earns abnormal returns by systematically buying the
+        stocks with the highest book-to-market ratio.</p>`,
       solution: String.raw`
         <p><strong>(a) Contradicts the weak form.</strong> Resistance levels rely only on past prices; if they allowed one
         to profit, market data would not be fully reflected in prices.</p>
@@ -662,7 +813,14 @@ addChapter("fin-eng", {
         one-in-two chance of beating the index, we expect $5\,000/2^{10}\approx 5$ managers with ten consecutive successes
         by pure chance. One would have to check that their performance repeats (Carhart 1997: it almost never does).</p>
         <p><strong>(f) Consistent.</strong> This is precisely the prediction of the EMH: active management costs fees
-        without delivering abnormal returns on average, so passive management beats the majority of active funds.</p>`,
+        without delivering abnormal returns on average, so passive management beats the majority of active funds.</p>
+        <p><strong>(g) Contradicts the semistrong form.</strong> This is <em>post-earnings-announcement drift</em> (Ball and
+        Brown 1968): public information should be incorporated on the announcement day; a predictable 90-day drift would
+        let one profit by buying after the announcement.</p>
+        <p><strong>(h) Contradicts the semistrong form</strong>: book-to-market is public data. This is the book-to-market
+        effect (Fama and French 1992: from 10.51% to 16.78% average annual return between extreme deciles). Caveat: a high
+        ratio might reflect a risk not captured by beta, in which case the "premium" would be compensation for risk rather
+        than an inefficiency.</p>`,
     },
     {
       id: "ex-index",
@@ -784,22 +942,33 @@ addChapter("fin-eng", {
     { term: "Preferred stock", def: String.raw`A hybrid between stock and bond: priority on dividends and assets, usually without voting rights.` },
     { term: "Derivative (contingent claim)", def: String.raw`A contract whose payoff depends on the price of another asset, the <strong>underlying</strong>: options, forwards, futures, swaps. Used to hedge or transfer risk.` },
     { term: "Financial intermediary", def: String.raw`An institution that issues its own securities to buy those of other agents: commercial bank, investment company, insurer, pension fund, mutual fund.` },
+    { term: "Investment banker", def: String.raw`Bank (Goldman Sachs, Merrill Lynch…) that advises the issuing corporation on the price of its securities and on interest rates, and markets the securities in the primary market.` },
     { term: "Agency problem", def: String.raw`Conflict between shareholders (owners) and managers: the latter do not necessarily maximize firm value (moral hazard). Remedies: incentive compensation, board of directors, threat of takeover.` },
+    { term: "Proxy fight", abbr: "Proxy contest", def: String.raw`An attempt by shareholders to gather enough votes (proxies) to replace management. A threat that disciplines poorly performing managers.` },
+    { term: "Sarbanes-Oxley Act", abbr: "SOX", def: String.raw`U.S. law (2002) passed after the Enron and WorldCom scandals: tightens the rules of corporate governance (more independent directors, control of accounts).` },
     { term: "Risk-return trade-off", def: String.raw`"No free lunch": a higher expected return is paid for with higher risk. <strong>Diversification</strong> (holding many assets) reduces risk without sacrificing expected return.` },
     { term: "Active / passive management", def: String.raw`Active: looking for undervalued securities and timing the market. Passive: holding an index portfolio without trying to beat the market. The EMH argues for passive management.` },
     { term: "Securitization", def: String.raw`Bundling (mortgage) loans into pools sold as tradable securities. Extended to <strong>subprime</strong> loans (high default risk), it was at the root of the 2008 crisis.` },
+    { term: "Fannie Mae / Freddie Mac", abbr: "FNMA / FHLMC", def: String.raw`U.S. mortgage agencies that launched securitization by buying low-risk <strong>conforming</strong> loans and bundling them into tradable pools.` },
+    { term: "Subprime loan", def: String.raw`A <em>non-conforming</em> mortgage loan to borrowers with high default risk. Its securitization by private firms was at the heart of the 2008 crisis.` },
+    { term: "Collateralized debt obligation", abbr: "CDO", def: String.raw`Credit derivative: a bank sells loans to a special purpose vehicle (<strong>SPV</strong>) that issues securities in senior, mezzanine and equity <strong>tranches</strong>; the equity tranche absorbs the first losses.` },
     { term: "Systemic risk", def: String.raw`The risk of a breakdown of the financial system when problems in one market spill over into others (example: AIG's insolvency in 2008).` },
     { term: "Efficient Market Hypothesis", abbr: "EMH", def: String.raw`Prices quickly and fully reflect all relevant information, thanks to competition among investors. Consequence: prices follow a <strong>random walk</strong>.` },
     { term: "Weak-form EMH", def: String.raw`Prices already reflect all market trading data (past prices, volumes). <strong>Technical analysis</strong> (chartism, support and resistance levels) therefore cannot beat the market.` },
     { term: "Semistrong-form EMH", def: String.raw`Prices reflect all publicly available information (accounts, products, management). <strong>Fundamental analysis</strong> therefore cannot beat the market.` },
     { term: "Strong-form EMH", def: String.raw`Prices reflect all information, including insiders' information. Not expected to hold; insider trading is regulated (SEC Rule 10b-5).` },
+    { term: "Serial correlation", def: String.raw`The tendency of returns to be related to past returns. Slightly positive over short horizons (momentum), negative over long horizons (reversal).` },
+    { term: "Fads hypothesis", def: String.raw`Explanation of negative long-run serial correlation: the market overreacts to news, then corrects when it recognizes its error.` },
     { term: "Market anomalies", def: String.raw`Empirical regularities contrary to the EMH: momentum (short-run persistence), reversal (long run), P/E effect, size effect, neglected firm, liquidity, book-to-market, post-earnings-announcement drift.` },
     { term: "Price-earnings ratio", abbr: "P/E", def: String.raw`Share price divided by earnings per share. P/E effect (Basu 1977): low-P/E stocks outperformed, even after adjusting for beta.` },
+    { term: "Post-earnings-announcement drift", def: String.raw`Anomaly (Ball and Brown 1968): after an earnings surprise, the price keeps moving in the same direction for weeks instead of adjusting immediately.` },
+    { term: "Alpha", def: String.raw`A portfolio's abnormal return, beyond what its risk justifies. Fund alphas are short-lived: they do not persist from one period to the next (Carhart 1997).` },
     { term: "Treasury bill", abbr: "T-bill", def: String.raw`Short-term government debt (4 to 52 weeks), sold below par, no coupon. The reference instrument of the money market.` },
     { term: "T-note, T-bond", abbr: "T-note / T-bond", def: String.raw`Medium-term (up to 10 years) and long-term (10 to 30 years) government bonds with semiannual coupons. <strong>TIPS</strong> have an inflation-indexed principal.` },
     { term: "Certificate of deposit", abbr: "CD", def: String.raw`A time deposit with a bank: interest and principal are paid only at the end of the term.` },
     { term: "Commercial paper", abbr: "CP", def: String.raw`Short-term unsecured debt issued by large companies. Asset-backed variant: ABCP.` },
     { term: "Repurchase agreement", abbr: "Repo", def: String.raw`Sale of government securities with an agreement to buy them back the next day at a slightly higher price. A very short-term collateralized loan; reference rates SOFR (U.S.), KOFR (Korea).` },
+    { term: "3-month CD / T-bill spread", def: String.raw`Difference between the rate on bank certificates of deposit and the T-bill rate: a measure of the perceived risk of banks, which spikes in crises (OPEC I, 1987, LTCM, 2008).` },
     { term: "Callable / convertible bond", def: String.raw`Callable: the issuer may repurchase the bond at a stipulated price. Convertible (CB): the holder may convert it into a stipulated number of shares.` },
     { term: "Price-weighted index", def: String.raw`Average of the component prices divided by a divisor $d$ adjusted at splits (<strong>DJIA</strong> type, Dow Jones Industrial Average). Overweights high-priced stocks.` },
     { term: "Market-value-weighted index", def: String.raw`Weighted by market value $P_iN_i$ (<strong>S&amp;P 500</strong> type). Unaffected by splits, replicable by an index fund or an ETF.` },

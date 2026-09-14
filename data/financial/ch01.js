@@ -72,15 +72,30 @@ addChapter("fin-eng", {
       <li><strong>Séparation propriété / gestion</strong> : les actionnaires peuvent vendre leurs titres sans
           affecter la gestion. Contrepartie : le <strong>problème d'agence</strong> (les dirigeants
           maximisent-ils vraiment la valeur de la firme ? aléa moral). Garde-fous : rémunération incitative
-          (stock-options), conseil d'administration, analystes et investisseurs institutionnels, menace d'OPA.</li>
-      <li><strong>Gouvernance et éthique</strong> : la transparence est nécessaire pour des décisions éclairées ;
-          scandales comptables (Enron, WorldCom), loi Sarbanes-Oxley aux États-Unis.</li>
+          (stock-options des dirigeants) ; le conseil d'administration peut évincer les dirigeants (Disney, Boeing,
+          Fannie Mae) ; les analystes financiers et les grands investisseurs institutionnels (fonds de pension)
+          mettent sous pression les mauvais gestionnaires ; les dirigeants peu performants sont exposés à la menace
+          d'une prise de contrôle ou d'une <em>bataille de procurations</em> (<em>proxy fight</em>, par exemple chez HP).</li>
+      <li><strong>Gouvernance et éthique</strong> : un niveau de transparence suffisant est nécessaire pour que les
+          investisseurs prennent des décisions éclairées. Exemples de dérives : scandales <em>comptables</em> (faillites
+          d'Enron et WorldCom), scandales d'<em>analystes</em> (Salomon Smith Barney, groupe Citigroup), abus lors
+          d'<em>introductions en bourse</em> (Credit Suisse First Boston). Réponse : la loi <strong>Sarbanes-Oxley</strong>
+          aux États-Unis, qui durcit les règles de gouvernance (par exemple davantage d'administrateurs indépendants).</li>
     </ul>
     <p><strong>Les acteurs</strong> : les entreprises sont emprunteuses nettes, les ménages épargnants nets,
-    l'État peut être l'un ou l'autre. Les <strong>intermédiaires financiers</strong> (banques commerciales,
-    sociétés d'investissement, assureurs, fonds de pension, fonds communs) émettent leurs propres titres pour
-    acheter ceux des autres ; les banques d'investissement conseillent l'émetteur et placent les titres sur
-    le marché primaire.</p>
+    l'État peut être l'un ou l'autre (selon l'écart entre recettes fiscales et dépenses publiques).</p>
+    <ul>
+      <li>Les <strong>intermédiaires financiers</strong> (banques commerciales, sociétés d'investissement, assureurs,
+          coopératives de crédit, fonds communs de placement, fonds de pension) émettent leurs propres titres pour
+          lever des fonds et acheter les titres d'autres sociétés.</li>
+      <li>Les <strong>banques commerciales</strong> lèvent des fonds en empruntant (dépôts) et prêtent cet argent à
+          d'autres emprunteurs.</li>
+      <li>Les <strong>sociétés d'investissement</strong> regroupent et gèrent l'argent de nombreux investisseurs, en
+          profitant d'économies d'échelle et de gamme.</li>
+      <li>Les <strong>banques d'investissement</strong> (Goldman Sachs, Merrill Lynch, Citigroup…) conseillent
+          l'émetteur sur le prix des titres et le taux d'intérêt approprié, et placent les titres sur le
+          <strong>marché primaire</strong>.</li>
+    </ul>
     <div class="callout"><strong>Les marchés sont concurrentiels : « il n'y a pas de repas gratuit ».</strong>
       <p><em>Arbitrage rendement-risque</em> : un rendement espéré plus élevé se paie par un risque plus élevé.
       Deux questions centrales : comment mesurer le risque d'un actif ? quel est le taux d'échange quantitatif
@@ -88,28 +103,56 @@ addChapter("fin-eng", {
       la <em>diversification</em>.</p>
       <p><em>Gestion active</em> (chercher des titres sous-évalués, anticiper le marché) contre
       <em>gestion passive</em> (détenir un portefeuille efficient sans chercher à battre le marché).</p></div>
-    <p><strong>Crise de 2008</strong> : la <em>titrisation</em> des prêts hypothécaires (Fannie Mae, Freddie
-    Mac, puis acteurs privés) a étendu le modèle aux prêts <em>subprime</em> à fort risque de défaut. Le
-    <em>risque systémique</em> est la possibilité qu'une défaillance dans un marché se propage aux autres
-    (l'insolvabilité d'AIG a menacé les banques qui comptaient sur sa protection). Réponses : injection de
-    capital dans les banques (assouplissement quantitatif), compensation centralisée des produits OTC
-    standardisés comme les CDS (chambre de compensation, CCP), incitations fondées sur le risque. Le
-    <em>TED spread</em> (écart entre le taux interbancaire LIBOR et le taux des bons du Trésor) mesure la
-    tension du système bancaire.</p>
+    <p><strong>Crise de 2008.</strong></p>
+    <ul>
+      <li><em>Prix de l'immobilier</em> (indice Case-Shiller) : forte hausse de la fin des années 1990 jusqu'à un pic
+          vers 2006, puis chute jusqu'aux environs de 2012. C'est le point de départ de la crise.</li>
+      <li><em>Évolution du financement immobilier.</em> Avant 1970, les prêts hypothécaires venaient surtout de prêteurs
+          locaux (caisses d'épargne, coopératives de crédit). Puis <strong>Fannie Mae</strong> (FNMA, Federal National
+          Mortgage Association) et <strong>Freddie Mac</strong> (FHLMC, Federal Home Loan Mortgage Corporation) ont racheté
+          les prêts aux établissements prêteurs pour les regrouper en grands pools négociables comme n'importe quel actif
+          financier : c'est la <strong>titrisation</strong>, d'abord limitée aux prêts <em>conformes</em> (peu risqués).
+          Des acteurs privés ont ensuite titrisé des prêts <em>non conformes</em>, les prêts <strong>subprime</strong> à
+          fort risque de défaut : d'où la crise des subprimes.</li>
+      <li><em>Dérivés hypothécaires : les CDO</em> (<em>collateralized debt obligations</em>). La banque cède ses prêts à
+          une structure ad hoc (<strong>SPV</strong>, <em>special purpose vehicle</em>), qui émet des titres découpés en
+          <strong>tranches</strong> : <em>senior</em> (payée en premier, la moins risquée), <em>mezzanine</em>, puis
+          <em>equity</em> (qui absorbe les premières pertes). Les investisseurs achètent ces tranches, et leur argent
+          revient à la banque en paiement des prêts cédés.</li>
+      <li><em>TED spread</em> : écart entre le LIBOR (taux interbancaire) et le taux des T-bills. Faible de 1988 à 2007,
+          il bondit en 2007-2008 quand les banques craignent de se prêter entre elles : c'est un indicateur du risque de
+          crédit dans le système bancaire.</li>
+      <li><em>Risque systémique</em> : possibilité d'effondrement du système financier quand les problèmes d'un marché
+          se propagent aux autres. Exemple : l'insolvabilité d'AIG a entraîné celle d'autres firmes, en particulier des
+          banques qui comptaient sur sa protection contre le défaut de centaines de milliards de dollars de prêts
+          hypothécaires.</li>
+      <li><em>Sortie de crise</em> : injection de capital dans les banques fragiles (assouplissement quantitatif, QE) ;
+          marchés centralisés pour certains produits OTC standardisés comme les CDS (contrepartie centrale, CCP) ;
+          systèmes d'incitation fondés sur le risque.</li>
+    </ul>
 
     <h3>4. Classes d'actifs et produits (Réf. A)</h3>
     <p><strong>Marché monétaire</strong> : titres de dette à court terme, négociables, liquides et peu
-    risqués (« quasi-liquidités »).</p>
+    risqués (« quasi-liquidités », <em>cash equivalents</em>). À l'opposé, le <strong>marché de capitaux</strong>
+    regroupe les titres à long terme et plus risqués : obligations longues, actions, dérivés (options, futures).</p>
     <ul>
-      <li><em>Bons du Trésor</em> (T-bills) : émis par l'État à 4, 13, 26 ou 52 semaines, achetables sur le
-          marché secondaire, exonérés d'impôts locaux aux États-Unis.</li>
-      <li><em>Certificat de dépôt</em> (CD) : dépôt à terme dans une banque, intérêts et principal versés à
-          l'échéance seulement.</li>
+      <li><em>Bons du Trésor</em> (T-bills) : émis par l'État américain à 4, 13, 26 ou 52 semaines. Les particuliers
+          peuvent les acheter sur le marché secondaire auprès d'un courtier en titres d'État. Coupure minimale de 100
+          dollars (10 000 dollars est courant). Exonérés des impôts des États et des impôts locaux.</li>
+      <li><em>Certificat de dépôt</em> (CD) : dépôt à terme dans une banque, qui ne peut pas être retiré à la
+          demande ; la banque verse intérêts et principal seulement à la fin de la durée fixée.</li>
       <li><em>Billet de trésorerie</em> (commercial paper, CP) : dette à court terme non garantie émise par de
-          grandes entreprises ; variante adossée à des actifs (ABCP).</li>
-      <li><em>Pension livrée</em> (repo) : un intermédiaire vend des titres d'État avec engagement de les
-          racheter le lendemain à un prix légèrement supérieur ; taux de référence SOFR, KOFR.</li>
+          grandes entreprises connues. Forte hausse récente des <em>ABCP</em> (billets adossés à des actifs), émis par
+          des institutions financières comme les banques pour lever des fonds à court terme afin d'investir dans
+          d'autres actifs, qui servent de garantie.</li>
+      <li><em>Pension livrée</em> (repo, RP) : un courtier vend des titres d'État à un investisseur au jour le jour,
+          avec engagement de les racheter à une date future (en général le lendemain) à un prix légèrement supérieur ;
+          taux de référence SOFR (États-Unis), KOFR (Corée).</li>
     </ul>
+    <p>L'<strong>écart entre le taux des CD à 3 mois et celui des T-bills</strong> mesure le risque perçu des banques
+    par rapport à l'État. Faible en temps normal (moins d'un point), il bondit à chaque crise : premier choc pétrolier
+    (OPEC I, plus de 4 points vers 1974), second choc (OPEC II, vers 1980), faillite de Penn Square (1982), krach
+    boursier de 1987, LTCM (1998), puis la crise du crédit de 2008 (environ 3,5 points).</p>
     <p><strong>Marché obligataire</strong> : titres à long terme.</p>
     <ul>
       <li><em>T-notes</em> (jusqu'à 10 ans) et <em>T-bonds</em> (10 à 30 ans), coupons semestriels ;
@@ -120,7 +163,9 @@ addChapter("fin-eng", {
     </ul>
     <p><strong>Actions</strong> : une action ordinaire donne une voix par action et une part des bénéfices.
     L'actionnaire est <em>créancier résiduel</em> (dernier servi sur les actifs et revenus) et à
-    <em>responsabilité limitée</em> (il ne peut perdre que sa mise). L'<em>action de préférence</em> est un
+    <em>responsabilité limitée</em> (il ne peut perdre que sa mise). Le droit de vote rend possibles les
+    <em>batailles de procurations</em> (<em>proxy fights</em>), où des actionnaires tentent de remplacer la direction :
+    c'est l'un des remèdes au problème d'agence. L'<em>action de préférence</em> est un
     hybride : priorité sur les dividendes et les actifs, comme une obligation, mais sans droit de vote en général.</p>
     <p><strong>Indices boursiers</strong> : trois questions de construction (représentatif ? large ou étroit ?
     pondération ?). Le <em>Dow Jones</em> (30 valeurs, depuis 1896) est pondéré par les <em>prix</em> : il
@@ -131,6 +176,11 @@ addChapter("fin-eng", {
     Options (call, put ; échéance ; prix d'exercice ; la prime augmente avec la durée restante), contrats à
     terme (position longue $=$ achat, courte $=$ vente), swaps, swaptions. Une option coûte une prime, un
     contrat à terme ne coûte rien à l'entrée.</p>
+    <div class="callout"><strong>Composer un futures avec des options.</strong>
+      <p>Acheter un call et vendre un put de même strike $K$ et même échéance $T$ rapporte à l'échéance
+      $\max(S_T-K,0)-\max(K-S_T,0)=S_T-K$, quel que soit $S_T$ : c'est exactement le gain d'une position longue sur un
+      contrat à terme au prix $K$. Les options sont des « briques » avec lesquelles on peut reconstruire un futures ;
+      la prime payée pour le call est en partie compensée par la prime reçue pour le put.</p></div>
 
     <h3>5. L'hypothèse d'efficience des marchés (Réf. B)</h3>
     <p>Kendall (1953) n'a trouvé aucun motif prévisible dans les cours : les prix évoluent au hasard, comme une
@@ -138,12 +188,15 @@ addChapter("fin-eng", {
     dès qu'une information est disponible, les participants l'analysent et la <em>compétition</em> garantit
     que les prix la reflètent immédiatement. Un prix ne bouge donc qu'à l'arrivée d'une information nouvelle,
     par définition imprévisible.</p>
+    <p>Illustration : les <strong>rendements anormaux cumulés des sociétés cibles d'une OPA</strong>. Le cours monte
+    dans les jours qui précèdent l'annonce (fuites d'information), bondit le jour même (environ $+26\,\%$ cumulé),
+    puis <em>ne dérive plus</em> après l'annonce : l'information est intégrée immédiatement, comme le prédit l'EMH.</p>
     <div class="tbl-wrap"><table class="tbl">
       <thead><tr><th>Forme de l'EMH</th><th>Information déjà reflétée dans les prix</th><th>Ce qui ne peut pas battre le marché</th></tr></thead>
       <tbody>
         <tr><td><strong>Faible</strong></td><td>Données de marché : prix passés, volumes, positions courtes, taux.</td><td>L'analyse technique (chartisme, niveaux de support et de résistance).</td></tr>
         <tr><td><strong>Semi-forte</strong></td><td>Toute l'information publique : comptes, produits, qualité du management, brevets, prévisions de résultats.</td><td>L'analyse fondamentale (bilans, bénéfices passés).</td></tr>
-        <tr><td><strong>Forte</strong></td><td>Toute l'information pertinente, y compris celle des initiés.</td><td>Même les initiés (les délits d'initiés sont d'ailleurs réglementés : règle 10b-5, SEC).</td></tr>
+        <tr><td><strong>Forte</strong></td><td>Toute l'information pertinente, y compris celle des initiés.</td><td>Même les initiés. La règle 10b-5 du Securities Exchange Act (1934) limite les transactions des dirigeants, administrateurs et gros actionnaires, et les oblige à déclarer leurs opérations à la SEC.</td></tr>
       </tbody></table></div>
     <p>Les ensembles d'information sont emboîtés : forte $\supset$ semi-forte $\supset$ faible. Si le marché
     est efficient au sens fort, il l'est aussi au sens semi-fort et faible.</p>
@@ -151,26 +204,58 @@ addChapter("fin-eng", {
     recommandent la gestion passive (fonds indiciels, ETF, « acheter et conserver »). Stratégie hybride : un
     cœur indiciel plus une poche gérée activement.</p>
     <div class="callout"><strong>Tester l'efficience : trois difficultés.</strong>
-      <p><em>Ampleur</em> : un gérant qui améliore de 0,1 % par an la performance d'un fonds de plusieurs milliards
-      crée beaucoup de valeur, mais cet effet est noyé dans la volatilité annuelle du marché et indétectable
-      statistiquement. <em>Biais de sélection</em> : les stratégies gagnantes ne sont pas publiées, on n'observe que
+      <p>L'EMH n'a jamais été largement acceptée à Wall Street : l'analyse financière peut-elle améliorer la
+      performance ? Trois problèmes empêchent de trancher.</p>
+      <p><em>Ampleur</em> : un gérant qui supervise 5 milliards de dollars et améliore la performance de 0,1 % par an
+      crée beaucoup de valeur (5 millions par an), mais cet effet est noyé dans la volatilité annuelle du marché et
+      indétectable statistiquement. <em>Biais de sélection</em> : les stratégies gagnantes ne sont pas publiées, on n'observe que
       celles qui ont échoué. <em>Coup de chance</em> : parmi des milliers d'investisseurs, certains réussissent
       par hasard ; il faut vérifier que la performance se répète.</p></div>
-    <p><strong>Tests et anomalies.</strong> Forme faible : sur horizon court, faible corrélation sérielle
-    positive et <em>effet momentum</em> (Jegadeesh et Titman 1993 : les bonnes ou mauvaises performances
-    récentes persistent) ; sur horizon long, corrélation négative et <em>effet de renversement</em> (DeBondt et
-    Thaler 1985), interprétés comme sur-réaction à court terme puis correction. Forme semi-forte : effet
-    <em>P/E</em> (Basu 1977, les faibles PER surperforment même après ajustement du bêta), effet
-    <em>taille</em> (Banz 1981), effet <em>firme négligée</em> (Arbel et Strebel 1983), effet
-    <em>liquidité</em> (Amihud et Mendelson 1986, prime exigée pour les titres illiquides), effet
-    <em>book-to-market</em> (Fama et French 1992 : ratio élevé $\Rightarrow$ rendement moyen plus élevé, et le
-    bêta n'explique plus rien une fois taille et book-to-market contrôlés), <em>dérive post-annonce de
-    résultats</em> (Ball et Brown 1968, réaction lente des cours). Forme forte : on ne s'attend pas à ce
-    qu'elle tienne, mais suivre les transactions des initiés ne rapporte rien de significatif (Seyhun 1986).</p>
+    <p><strong>Tests de la forme faible</strong> (motifs dans les rendements).</p>
+    <ul>
+      <li><em>Horizon court</em> : la <strong>corrélation sérielle</strong> (tendance des rendements à dépendre des
+          rendements passés), étudiée par Conrad et Kaul (1988) et Lo et MacKinlay (1988), ne permet pas de rejeter
+          clairement l'EMH, même si les rendements hebdomadaires des actions du NYSE présentent une corrélation sérielle
+          positive. <strong>Effet momentum</strong> (Jegadeesh et Titman 1993) : les bonnes ou mauvaises performances
+          récentes de certaines actions se prolongent.</li>
+      <li><em>Horizon long</em> : corrélation sérielle <em>négative</em>, d'où l'<strong>hypothèse des engouements</strong>
+          (<em>fads hypothesis</em>) : le marché sur-réagirait aux nouvelles. <strong>Effet de renversement</strong>
+          (DeBondt et Thaler 1985, Chopra et al. 1992) : les actions les plus (moins) performantes tendent à
+          sous-performer (surperformer) les années suivantes. La sur-réaction à court terme, qui crée le momentum,
+          mènerait à des renversements à long terme quand le marché reconnaît son erreur.</li>
+    </ul>
+    <p><strong>Tests de la forme semi-forte</strong> (anomalies de marché).</p>
+    <ul>
+      <li><strong>Effet P/E</strong> (Basu 1977) : les portefeuilles à faible PER ont des rendements plus élevés que
+          ceux à PER élevé, même après ajustement du bêta.</li>
+      <li><strong>Effet taille</strong> (Banz 1981) : les petites entreprises surperforment. Sur 1926-2008, le rendement
+          annuel moyen passe de 19,34 % pour le décile des plus petites capitalisations à 10,77 % pour celui des plus
+          grandes, et l'écart subsiste au-delà de ce que prédit la droite de marché (SML).</li>
+      <li><strong>Effet firme négligée</strong> (Arbel et Strebel 1983) : les petites firmes sont délaissées par les
+          grands investisseurs institutionnels, et l'information à leur sujet est moins disponible.</li>
+      <li><strong>Effet liquidité</strong> (Amihud et Mendelson 1986) : les investisseurs exigent une prime de rendement
+          pour détenir des actions moins liquides.</li>
+      <li><strong>Effet book-to-market</strong> (Fama et French 1992) : un ratio valeur comptable / valeur de marché
+          élevé implique un rendement moyen plus élevé (de 10,51 % pour le décile le plus bas à 16,78 % pour le plus
+          haut, 1926-2008). Une fois taille et book-to-market contrôlés, le bêta n'explique plus les rendements moyens.</li>
+      <li><strong>Dérive post-annonce de résultats</strong> (Ball et Brown 1968) : les cours réagissent lentement aux
+          annonces. Les actions à plus forte surprise positive (décile 10) continuent de monter pendant les 90 jours qui
+          suivent l'annonce (jusqu'à environ $+8\,\%$ cumulé), celles à plus forte surprise négative continuent de
+          baisser : c'est contraire à l'efficience, où l'ajustement devrait être immédiat.</li>
+    </ul>
+    <p><strong>Tests de la forme forte</strong> (information d'initiés) : on ne s'attend pas à ce que le marché soit
+    efficient au sens fort, et les délits d'initiés sont réglementés (SEC). Les autres investisseurs peuvent-ils profiter
+    en copiant les transactions déclarées des initiés ? Seyhun (1986) montre que non : les rendements anormaux obtenus
+    sont insuffisants.</p>
+    <p><strong>Persistance de la performance des fonds.</strong> Si l'on classe les fonds en déciles selon leur
+    performance ajustée du risque sur un trimestre, l'écart entre les meilleurs (environ $+4{,}6\,\%$) et les pires
+    (environ $-4{,}8\,\%$) est important pendant ce trimestre, mais disparaît presque entièrement le trimestre suivant :
+    même si certains gérants sont doués, leurs <strong>alphas</strong> (rendements anormaux) sont de courte durée. Sur
+    plusieurs années, Carhart (1997) montre que les rendements des déciles convergent dès la première année : la
+    performance future est presque indépendante de la performance passée.</p>
     <p><strong>Verdict</strong> : la performance des gérants professionnels est globalement cohérente avec
-    l'efficience. La plupart ne battent pas la stratégie passive et la performance passée ne prédit presque
-    pas la performance future (Carhart 1997) ; les « superstars » (Lynch, Buffett, Templeton, Soros) sont
-    l'exception.</p>
+    l'efficience. La plupart ne battent pas la stratégie passive ; il existe toutefois quelques « superstars » (Peter
+    Lynch, Warren Buffett, John Templeton, George Soros).</p>
 
     <h3>6. Options</h3>
     <p>L'option la plus simple, le <strong>call européen</strong>, est un contrat par lequel, à une date
@@ -261,7 +346,9 @@ addChapter("fin-eng", {
       text: String.raw`<strong>Trois fonctions des marchés financiers</strong> : lever du capital (marchés de capitaux),
         transférer le risque (marchés dérivés), commerce international (changes). Subdivisions : actions, obligations,
         monétaire (court terme), dérivés, changes. Rôles économiques : information, timing de consommation, allocation
-        du risque, séparation propriété/gestion (problème d'agence).`,
+        du risque, séparation propriété/gestion (problème d'agence ; garde-fous : stock-options, conseil
+        d'administration, analystes, menace d'OPA, proxy fights). Gouvernance : Enron, WorldCom, loi Sarbanes-Oxley.
+        Crise de 2008 : titrisation (Fannie Mae, Freddie Mac, puis subprimes), CDO en tranches, TED spread, risque systémique (AIG).`,
     },
     {
       text: String.raw`<strong>Classes d'actifs.</strong> Monétaire $=$ court terme, liquide, peu risqué (T-bills, CD, CP,
@@ -280,7 +367,7 @@ addChapter("fin-eng", {
       text: String.raw`<strong>Tester l'EMH.</strong> Trois difficultés : ampleur, biais de sélection, coup de chance.
         Anomalies à connaître : momentum (court terme) et renversement (long terme), effet P/E, taille, firme négligée,
         liquidité, book-to-market (Fama-French), dérive post-annonce. Verdict : la plupart des gérants ne battent pas
-        la gestion passive.`,
+        la gestion passive, et les alphas ne persistent pas (Carhart 1997). Horizon long : hypothèse des engouements (fads).`,
       exos: ["ex-emh"],
     },
     {
@@ -293,8 +380,9 @@ addChapter("fin-eng", {
     {
       text: String.raw`<strong>Forward contre futures.</strong> Même engagement (livrer l'actif au prix convenu, rien
         payé à l'entrée, contrairement à la prime d'une option), mais le futures est standardisé, négocié en bourse, avec
-        appel de marge et <em>règlement quotidien</em> des gains et pertes ; le forward règle tout à l'échéance.`,
-      exos: ["ex-forward-futures"],
+        appel de marge et <em>règlement quotidien</em> des gains et pertes ; le forward règle tout à l'échéance. Call acheté $+$ put vendu (même $K$, même $T$) $=$ futures au prix $K$ :
+        payoff $S_T-K$.`,
+      exos: ["ex-forward-futures", "ex-payoffs"],
     },
     {
       text: String.raw`<strong>Trois intervenants.</strong> Hedger : réduit un risque existant. Spéculateur : parie sur
@@ -497,6 +585,64 @@ addChapter("fin-eng", {
         parmi les échecs, ce qui empêche d'évaluer la vraie capacité des gérants. Les deux dernières réponses décrivent le
         problème du coup de chance et celui de l'ampleur.`,
     },
+    {
+      q: String.raw`Acheter un call et vendre un put de même strike $K$ et même échéance $T$ équivaut à…`,
+      choices: [
+        String.raw`une position courte sur un futures au prix $K$.`,
+        String.raw`un placement sans risque rapportant $K$.`,
+        String.raw`une position longue sur un futures au prix $K$.`,
+        String.raw`un call de strike $2K$.`,
+      ],
+      answer: 2,
+      explanation: String.raw`À l'échéance, $\max(S_T-K,0)-\max(K-S_T,0)=S_T-K$ quel que soit $S_T$ : c'est le gain d'une position
+        longue sur un contrat à terme au prix $K$. Les options permettent donc de « composer » un futures.`,
+    },
+    {
+      q: String.raw`Dans un CDO, quelle tranche absorbe les <strong>premières pertes</strong> en cas de défaut des prêts ?`,
+      choices: [String.raw`La tranche senior.`, String.raw`La tranche mezzanine.`, String.raw`Le SPV.`, String.raw`La tranche equity.`],
+      answer: 3,
+      explanation: String.raw`La banque cède ses prêts à un SPV qui émet des tranches. La tranche <em>equity</em> subit les premières pertes
+        (d'où un rendement promis élevé), la <em>mezzanine</em> ensuite, la <em>senior</em> en dernier. Le SPV est la structure
+        émettrice, pas une tranche.`,
+    },
+    {
+      q: String.raw`L'écart entre le taux des CD à 3 mois et celui des T-bills augmente fortement…`,
+      choices: [
+        String.raw`pendant les crises (chocs pétroliers, krach de 1987, LTCM, 2008), quand le risque perçu des banques monte.`,
+        String.raw`quand les taux d'intérêt baissent, quel que soit le contexte.`,
+        String.raw`uniquement quand l'État emprunte davantage.`,
+        String.raw`jamais : les deux taux sont sans risque.`,
+      ],
+      answer: 0,
+      explanation: String.raw`Un CD est une créance sur une banque, un T-bill une créance sur l'État. En période de stress, les
+        investisseurs exigent une prime pour le risque bancaire : l'écart bondit (plus de 4 points lors d'OPEC I, environ 3,5
+        points en 2008). Le TED spread (LIBOR contre T-bill) se lit de la même façon.`,
+    },
+    {
+      q: String.raw`Selon Arbel et Strebel (1983), pourquoi les petites firmes offrent-elles des rendements plus élevés ?`,
+      choices: [
+        String.raw`Parce qu'elles versent davantage de dividendes.`,
+        String.raw`Parce qu'elles sont délaissées par les grands investisseurs institutionnels et que l'information à leur sujet est moins disponible.`,
+        String.raw`Parce que leur bêta est toujours supérieur à 2.`,
+        String.raw`Parce qu'elles sont exonérées d'impôts.`,
+      ],
+      answer: 1,
+      explanation: String.raw`C'est l'<em>effet firme négligée</em>, lié à l'effet taille de Banz (1981) : de 19,34 % par an pour le
+        décile des plus petites capitalisations à 10,77 % pour les plus grandes (1926-2008). L'effet liquidité (Amihud et
+        Mendelson) en est une explication voisine.`,
+    },
+    {
+      q: String.raw`Les fonds du meilleur décile un trimestre donné se retrouvent, le trimestre suivant, à une performance proche de la moyenne. Cela signifie que…`,
+      choices: [
+        String.raw`les meilleurs gérants deviennent systématiquement les pires.`,
+        String.raw`le marché est inefficient au sens faible.`,
+        String.raw`les alphas sont de courte durée : la performance passée prédit mal la performance future.`,
+        String.raw`il faut acheter les fonds du pire décile.`,
+      ],
+      answer: 2,
+      explanation: String.raw`Même si certains gérants sont doués, leurs rendements anormaux ne persistent pas (Carhart 1997). C'est
+        cohérent avec l'efficience et plaide pour la gestion passive.`,
+    },
   ],
 
   /* -------------------- EXERCICES -------------------- */
@@ -537,7 +683,9 @@ addChapter("fin-eng", {
         <p>(a) Donner le payoff et le profit de l'<em>acheteur</em> du call, puis de l'acheteur du put, si à l'échéance
         $S_T=80$, $100$ ou $120$ €. (b) Pour quel $S_T$ l'acheteur du call est-il à l'équilibre (profit nul) ? Même
         question pour le put. (c) Quel est le profit maximal et la perte maximale de l'acheteur du put ? Du
-        <em>vendeur</em> du put ?</p>`,
+        <em>vendeur</em> du put ?</p>
+        <p>(d) Un investisseur achète le call et vend le put. Donner le payoff de ce portefeuille pour $S_T=80$, $100$ et
+        $120$ €, puis en général. À quel contrat correspond-il ? Quel est son coût net à l'entrée ?</p>`,
       hints: [String.raw`Payoff du call $=\max(S_T-K,0)$, du put $=\max(K-S_T,0)$ ; profit $=$ payoff $-$ prime, la prime étant payée d'avance quoi qu'il arrive.`],
       solution: String.raw`
         <p><strong>(a)</strong> Le payoff est ce que rapporte l'exercice ; le profit retranche la prime payée à l'origine.</p>
@@ -554,7 +702,12 @@ addChapter("fin-eng", {
         <p><strong>(c)</strong> Acheteur du put : perte maximale $=$ la prime, 5 € (si $S_T\ge 100$) ; profit maximal si
         l'action tombe à 0 : $100-5=95$ €. Le vendeur du put a la position exactement opposée : gain maximal 5 € (il
         garde la prime), perte maximale 95 €. C'est pourquoi le vendeur, qui a une <em>obligation</em> et non un droit,
-        doit se poser la question de la couverture.</p>`,
+        doit se poser la question de la couverture.</p>
+        <p><strong>(d)</strong> Payoff $=\max(S_T-100,0)-\max(100-S_T,0)$ : $-20$ pour $S_T=80$, $0$ pour $100$, $+20$
+        pour $120$. En général, $S_T-100$ quel que soit $S_T$ : c'est le payoff d'une <strong>position longue sur un
+        futures</strong> (ou forward) au prix 100. Coût net à l'entrée : $8-5=3$ € payés, alors qu'un futures ne coûte
+        rien. Ces 3 € traduisent le fait que, avec ces primes, le prix à terme de l'action n'est pas exactement 100 € ; le
+        profit du portefeuille est $S_T-103$.</p>`,
     },
     {
       id: "ex-pv",
@@ -659,7 +812,10 @@ addChapter("fin-eng", {
         stable les semaines suivantes. (c) Un analyste obtient des rendements anormaux en achetant les titres à faible
         ratio cours/bénéfice publié. (d) Un directeur financier achète des actions de sa société une semaine avant la
         publication de résultats exceptionnels et réalise un gain important. (e) Sur 5 000 gérants, une dizaine ont
-        battu l'indice dix années de suite. (f) Un fonds indiciel passif fait mieux que 80 % des fonds actifs sur dix ans.</p>`,
+        battu l'indice dix années de suite. (f) Un fonds indiciel passif fait mieux que 80 % des fonds actifs sur dix ans. (g) Après une annonce de résultats très
+        supérieurs aux attentes, le cours bondit le jour même puis continue de monter régulièrement pendant trois mois.
+        (h) Un investisseur obtient des rendements anormaux en achetant systématiquement les actions dont le ratio valeur
+        comptable / valeur de marché est le plus élevé.</p>`,
       solution: String.raw`
         <p><strong>(a) Contredit la forme faible.</strong> Les niveaux de résistance ne reposent que sur les prix passés ;
         s'ils permettaient de gagner, les données de marché ne seraient pas entièrement reflétées dans les cours.</p>
@@ -676,7 +832,14 @@ addChapter("fin-eng", {
         consécutifs par pur hasard. Il faudrait vérifier que leur performance se répète (Carhart 1997 : elle ne le fait
         presque jamais).</p>
         <p><strong>(f) Compatible.</strong> C'est précisément la prédiction de l'EMH : la gestion active coûte des frais
-        sans apporter de rendement anormal en moyenne, donc la gestion passive fait mieux que la majorité des fonds actifs.</p>`,
+        sans apporter de rendement anormal en moyenne, donc la gestion passive fait mieux que la majorité des fonds actifs.</p>
+        <p><strong>(g) Contredit la forme semi-forte.</strong> C'est la <em>dérive post-annonce de résultats</em> (Ball et
+        Brown 1968) : une information publique devrait être intégrée le jour de l'annonce ; une dérive prévisible pendant
+        90 jours permettrait de gagner en achetant après l'annonce.</p>
+        <p><strong>(h) Contredit la forme semi-forte</strong> : le book-to-market est une donnée publique. C'est l'effet
+        book-to-market (Fama et French 1992 : de 10,51 % à 16,78 % de rendement annuel moyen entre déciles extrêmes). Réserve :
+        un ratio élevé pourrait refléter un risque non capté par le bêta, auquel cas la « prime » serait une rémunération du
+        risque et non une inefficience.</p>`,
     },
     {
       id: "ex-index",
@@ -802,22 +965,33 @@ addChapter("fin-eng", {
     { term: "Action de préférence", def: String.raw`Titre hybride entre action et obligation : priorité sur les dividendes et les actifs, généralement sans droit de vote.` },
     { term: "Produit dérivé (actif contingent)", def: String.raw`Contrat dont le paiement dépend du prix d'un autre actif, le <strong>sous-jacent</strong> : options, forwards, futures, swaps. Sert à couvrir ou transférer un risque.` },
     { term: "Intermédiaire financier", def: String.raw`Institution qui émet ses propres titres pour acheter ceux d'autres agents : banque commerciale, société d'investissement, assureur, fonds de pension, fonds commun.` },
+    { term: "Banque d'investissement", def: String.raw`Banque (Goldman Sachs, Merrill Lynch…) qui conseille l'entreprise émettrice sur le prix des titres et le taux d'intérêt, et place les titres sur le marché primaire.` },
     { term: "Problème d'agence", def: String.raw`Conflit entre actionnaires (propriétaires) et dirigeants (gestionnaires) : ces derniers ne maximisent pas forcément la valeur de la firme (aléa moral). Remèdes : rémunération incitative, conseil d'administration, menace d'OPA.` },
+    { term: "Bataille de procurations", abbr: "Proxy fight", def: String.raw`Tentative d'actionnaires de réunir assez de votes (procurations) pour remplacer la direction. Menace qui discipline les dirigeants peu performants.` },
+    { term: "Loi Sarbanes-Oxley", abbr: "SOX", def: String.raw`Loi américaine (2002) adoptée après les scandales Enron et WorldCom : durcit les règles de gouvernance d'entreprise (plus d'administrateurs indépendants, contrôle des comptes).` },
     { term: "Arbitrage rendement-risque", def: String.raw`« Pas de repas gratuit » : un rendement espéré plus élevé se paie par un risque plus élevé. La <strong>diversification</strong> (détenir de nombreux actifs) réduit le risque sans sacrifier le rendement espéré.` },
     { term: "Gestion active / passive", def: String.raw`Active : chercher des titres sous-évalués et anticiper le marché. Passive : détenir un portefeuille indiciel sans chercher à battre le marché. L'EMH plaide pour la gestion passive.` },
     { term: "Titrisation", def: String.raw`Regroupement de prêts (hypothécaires) en pools revendus sous forme de titres négociables. Étendue aux prêts <strong>subprime</strong> (à fort risque de défaut), elle est à l'origine de la crise de 2008.` },
+    { term: "Fannie Mae / Freddie Mac", abbr: "FNMA / FHLMC", def: String.raw`Agences américaines de refinancement hypothécaire qui ont lancé la titrisation en rachetant des prêts <strong>conformes</strong> (peu risqués) pour les regrouper en pools négociables.` },
+    { term: "Prêt subprime", def: String.raw`Prêt hypothécaire <em>non conforme</em>, accordé à des emprunteurs à fort risque de défaut. Sa titrisation par des acteurs privés est au cœur de la crise de 2008.` },
+    { term: "Collateralized debt obligation", abbr: "CDO", def: String.raw`Dérivé de crédit : une banque cède des prêts à une structure ad hoc (<strong>SPV</strong>) qui émet des titres en <strong>tranches</strong> senior, mezzanine et equity ; la tranche equity absorbe les premières pertes.` },
     { term: "Risque systémique", def: String.raw`Risque d'effondrement du système financier lorsque les problèmes d'un marché se propagent aux autres (exemple : insolvabilité d'AIG en 2008).` },
     { term: "Hypothèse d'efficience des marchés", abbr: "EMH", def: String.raw`<em>Efficient Market Hypothesis</em> : les prix reflètent rapidement et complètement toute l'information pertinente, grâce à la compétition entre investisseurs. Conséquence : les cours suivent une <strong>marche aléatoire</strong>.` },
     { term: "EMH forme faible", def: String.raw`Les prix reflètent déjà toutes les données de marché (prix passés, volumes). L'<strong>analyse technique</strong> (chartisme, niveaux de support et de résistance) ne peut donc pas battre le marché.` },
     { term: "EMH forme semi-forte", def: String.raw`Les prix reflètent toute l'information publique (comptes, produits, management). L'<strong>analyse fondamentale</strong> ne peut donc pas battre le marché.` },
     { term: "EMH forme forte", def: String.raw`Les prix reflètent toute l'information, y compris celle des initiés. On ne s'attend pas à ce qu'elle tienne ; le délit d'initié est réglementé (règle 10b-5 de la SEC).` },
+    { term: "Corrélation sérielle", def: String.raw`Tendance des rendements à dépendre des rendements passés. Faiblement positive à court terme (momentum), négative à long terme (renversement).` },
+    { term: "Hypothèse des engouements", abbr: "Fads hypothesis", def: String.raw`Explication de la corrélation sérielle négative à long terme : le marché sur-réagit aux nouvelles, puis corrige quand il reconnaît son erreur.` },
     { term: "Anomalies de marché", def: String.raw`Régularités empiriques contraires à l'EMH : momentum (persistance à court terme), renversement (long terme), effet P/E, effet taille, firme négligée, liquidité, book-to-market, dérive post-annonce de résultats.` },
     { term: "Ratio cours/bénéfice", abbr: "P/E (PER)", def: String.raw`<em>Price-earnings ratio</em> : prix de l'action divisé par le bénéfice par action. Effet P/E (Basu 1977) : les faibles P/E ont surperformé, même après ajustement du bêta.` },
+    { term: "Dérive post-annonce de résultats", def: String.raw`Anomalie (Ball et Brown 1968) : après une surprise sur les résultats, le cours continue d'évoluer dans le même sens pendant des semaines, au lieu de s'ajuster immédiatement.` },
+    { term: "Alpha", def: String.raw`Rendement anormal d'un portefeuille, au-delà de ce que justifie son risque. Les alphas des fonds sont de courte durée : ils ne persistent pas d'une période à l'autre (Carhart 1997).` },
     { term: "Bon du Trésor", abbr: "T-bill", def: String.raw`Dette d'État à court terme (4 à 52 semaines), vendue en dessous du pair, sans coupon. Instrument de référence du marché monétaire.` },
     { term: "T-note, T-bond", abbr: "T-note / T-bond", def: String.raw`Obligations d'État à moyen terme (jusqu'à 10 ans) et long terme (10 à 30 ans), à coupons semestriels. Les <strong>TIPS</strong> ont un principal indexé sur l'inflation.` },
     { term: "Certificat de dépôt", abbr: "CD", def: String.raw`Dépôt à terme dans une banque : intérêts et principal versés uniquement à l'échéance.` },
     { term: "Billet de trésorerie", abbr: "CP", def: String.raw`<em>Commercial paper</em> : dette à court terme non garantie émise par de grandes entreprises. Variante adossée à des actifs : ABCP.` },
     { term: "Pension livrée", abbr: "Repo", def: String.raw`<em>Repurchase agreement</em> : vente de titres d'État avec engagement de rachat le lendemain à un prix légèrement supérieur. Prêt garanti à très court terme ; taux de référence SOFR (États-Unis), KOFR (Corée).` },
+    { term: "Écart CD 3 mois / T-bill", def: String.raw`Différence entre le taux des certificats de dépôt bancaires et celui des bons du Trésor : mesure du risque perçu des banques, qui bondit lors des crises (OPEC I, 1987, LTCM, 2008).` },
     { term: "Obligation callable / convertible", def: String.raw`Callable : l'émetteur peut racheter l'obligation à un prix fixé. Convertible (CB) : le porteur peut la convertir en un nombre fixé d'actions.` },
     { term: "Indice pondéré par les prix", def: String.raw`Moyenne des prix des composantes divisée par un diviseur $d$ ajusté lors des splits (type <strong>DJIA</strong>, Dow Jones Industrial Average). Surpondère les actions chères.` },
     { term: "Indice pondéré par la capitalisation", def: String.raw`Pondération par la valeur de marché $P_iN_i$ (type <strong>S&amp;P 500</strong>). Insensible aux splits, réplicable par un fonds indiciel ou un ETF.` },
