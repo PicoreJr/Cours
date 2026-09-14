@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 Site de **révisions** (fiches de partiel) — statique, sans build, hors-ligne, déployable sur
-GitHub Pages. Deux matières prêtes (**Probabilités**, **Financial Engineering**) + 2 emplacements « à venir ».
+GitHub Pages. Trois matières prêtes (**Probabilités**, **Financial Engineering**, **Heat Transfer** — en cours) + 1 emplacement « à venir ».
 Chaque matière est
 découpée en **chapitres**, et chaque chapitre expose 6 sections : Résumé de cours, À savoir pour le
 partiel (fiche liée aux exos), QCM interactif, Exercices corrigés, Formulaire, Définitions (lexique des
@@ -54,8 +54,10 @@ data/
   financial/ch01.js   Financial Engineering, chapitre 1 — Marchés financiers (fr, référence)
   financial/ch02.js   Financial Engineering, chapitre 2 — Taux d'intérêt (fr, référence)
   financial/en/*.js   traductions anglaises
+  heat/ch01-03.js     Heat Transfer, chapitres 1 à 3 (fr seulement pour l'instant)
 proba/                MATÉRIEL SOURCE du cours de proba (PDF slides + companions, notebooks) — non servi
 financial/            MATÉRIEL SOURCE de Financial Engineering (PDF chapitre + références Bodie-Kane-Marcus) — non servi
+Supplementary Lecture Notes-20260914/  MATÉRIEL SOURCE de Heat Transfer (29 PDF, cours 1 à 24) — non servi
 ```
 
 ## Ordre de chargement (index.html)
@@ -133,3 +135,9 @@ Le cours de Financial Engineering est dans `financial/` : `Chapter01_Financial M
 cours) + `Reference A` (Asset Classes, Bodie-Kane-Marcus ch. 2) + `Reference B` (EMH, BKM ch. 11) ;
 `Chapter02_Interest Rates.pdf` (d'après Hull, sans référence ; coquilles relevées et signalées sur le site :
 fig. 2.5, relation de la duration modifiée). Un chapitre du site = le chapitre PDF **et** ses références. Pas de `$` littéral pour l'argent : écrire « € ».
+Heat Transfer (`heat`) : notes de cours dans `Supplementary Lecture Notes-20260914/` (d'après Incropera). Découpage :
+ch. 1 cours 1-2, ch. 2 cours 3-4, ch. 3 cours 5-6 (faits, fr) ; ch. 4 cours 7-8 (conduction instationnaire), ch. 5 cours
+9/9SA/9SB/10 (équations de la convection), ch. 6 cours 11/11S/12/12SA/13 (couche limite), ch. 7 cours 14/14S (corrélations
+externes), ch. 8 cours 15-19 + sup1/sup2 manuscrits (écoulement interne), ch. 9 cours 22-24 (rayonnement) — à faire, ainsi
+que les traductions `data/heat/en/`. Erratum à signaler au ch. 9 : cours 24, ex. 2 (disque/hémisphère), $R_{12}=1/\pi$ et
+non $2/\pi$, donc $qpprox 83{,}1$ kW au lieu de 56,5 kW.

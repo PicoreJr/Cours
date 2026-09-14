@@ -76,11 +76,11 @@
   });
 
   defineSubject({
-    id: "matiere-3",
-    title: "Matière 3",
-    subtitle: "À définir",
-    status: "coming",
-    i18n: { en: { title: "Subject 3", subtitle: "To be defined" } },
+    id: "heat",
+    title: "Heat Transfer",
+    subtitle: "Transferts thermiques — conduction, convection, rayonnement",
+    status: "ready",
+    i18n: { en: { title: "Heat Transfer", subtitle: "Conduction, convection, radiation" } },
   });
 
   defineSubject({
